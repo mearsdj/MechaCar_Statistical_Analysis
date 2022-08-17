@@ -38,6 +38,7 @@ T-tests were performed across the suspension coil manufacturing lots to determin
 whether the mean PSI overall, and for each lot, was different from an expected 1500 PSI.
 As seen in the first result below, the overall (i.e. combined) mean was not determined to be statistically different
 from 1500.
+
 ![overall t result](total_t_test.png)
 
 At the lot level, for Lot 1 and Lot 2, we fail to reject the null hypothesis that mean coil PSI
