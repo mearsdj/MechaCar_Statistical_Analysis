@@ -1,4 +1,4 @@
-# MechaCar_Statistical_Analysis
+# MechaCar Statistical Analysis
 
 ## Linear Regression to Predict MPG
 
@@ -30,3 +30,29 @@ desired tolerance.
 ### Lot Summary:
 
 ![Lot Summary](lot_summary.png)
+
+
+## T-Tests on Suspension Coils
+
+T-tests were performed across the suspension coil manufacturing lots to determine
+whether the mean PSI overall, and for each lot, was different from an expected 1500 PSI.
+As seen in the first result below, the overall (i.e. combined) mean was not determined to be statistically different
+from 1500.
+![overall t result](total_t_test.png)
+
+At the lot level, for Lot 1 and Lot 2, we fail to reject the null hypothesis that mean coil PSI
+is different from 1500, but for Lot 3, we do reject the null, so conclude that the mean for Lot 3
+is statistically different from 1500.  This is consistent with our variance results for Lot 3 as well.
+T-test results for each lot are shown below:
+
+![Lot 1](Lot1_t_test.png)
+
+
+![Lot 2](Lot2_t_test.png)
+
+
+![Lot 3](Lot3_t_test.png)
+
+
+## Study Design: MechaCar vs Competition
+

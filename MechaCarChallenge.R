@@ -19,6 +19,14 @@ psi_by_lot <- susp_coils %>% group_by(Manufacturing_Lot) %>%
   summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI),PSI_Variance=var(PSI),
 PSI_Standard_Deviation=sd(PSI), .keep='groups')
 
+#calculating t-tests on the mean suspension coil psi
+
+overall_t <- t.test(susp_coils$PSI,mu=1500,conf.level = 0.95)
+
+#calculating t-tests on each lot
+t_by_lot <- susp_coils %>% group_by(Manufacturing_Lot,.drop=FALSE) %>% group_map(~ t.test(.x$PSI, mu=1500,conf.level = 0.95)) %>% setNames(unique(susp_coils$Manufacturing_Lot))
+
+
 
 #https://nathancarter.github.io/how2data/site/how-to-do-a-hypothesis-test-for-population-variance-in-r/
 # for lot3, is the variance statistically significant?
