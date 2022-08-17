@@ -18,15 +18,15 @@ reasonable predictive power for the mpg of MechaCar prototypes.
 
 In the analysis of 3 suspension coil manufacturing lots it was determined that one
 of the lots, Lot3, does not meet the design specification.
-The design spec requires that the variance of coil PSI can't exceed 100 PSI.
-As can be seen below, at the aggregate level (all lots combined) the combinded
+The design spec requires that the variance of coil PSI can't exceed 100.
+As can be seen below, at the aggregate level (all lots combined) the combined
 lots do meet the requirement,but when analyzed by lot, as noted, Lot3 falls outside the
 desired tolerance.
 
 ### Overall Summary:
 
- ![Overall Summary]('total_summary.png')
+![Overall Summary](total_summary.png)
 
 ### Lot Summary:
 
-![Lot Summary]('lot_summary.png')
+![Lot Summary](lot_summary.png)
