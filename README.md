@@ -57,3 +57,28 @@ T-test results for each lot are shown below:
 
 ## Study Design: MechaCar vs Competition
 
+A statistical analysis to compare the **total cost of ownership** of a MechaCar
+to competitors would consider the following cost variables:
+- Regular Maintenance
+- Repair
+- Fuel
+
+We'll ignore other typical ownership costs, such as licensing fees, insurance and depreciation,
+as they are less directly related to the mechanics of the vehicle.
+
+Regular maintenance is defined as the costs associated with keeping the vehicle runinng well,
+and includes consumables such as oil changes, tire rotation and replacement and brake replacement.
+Repair is defined as all other mechanical expenses incurred by an owner, excluding accident repair.
+Fuel cost is defined as the total cost of fuel per kilometer driven. 
+
+The above data could be obtained from a consumer survey, such as those done by consumerreports.org.
+Data would be divided by manufacturer for each variable.
+Comparing each of these *continuous* variables would be done using *two-tailed* (to avoid ethical concerns) *two-sample* **t-Testing**.
+In each case, we would compare the mean of the MechaCar variable to a competitor.
+
+The null hypothesis would be that the mean Regular Maintenance/Repair/Fuel costs of a MechaCar is not
+statistically different from a competitor.  The alternative would be that there is a statistically signifncant
+difference.
+
+We may also test the MechaCar variables against an average of all other competitors, using a similar test set up,
+to determine how the MechaCar compares to the industry overall. 
